@@ -1,0 +1,3 @@
+# Ingnorar archivos
+config/config.php
+mailer/datos.php
