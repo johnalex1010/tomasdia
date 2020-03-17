@@ -7,7 +7,7 @@
   <div class="container">
     <div class="row text-center justify-content-center mb-5"  data-aos="fade-up">
       <div class="col-lg-6 mb-5 text-center">
-        <h1 class="section-title w-100 mx-auto">Edciones <?php echo date('Y') ?></h1>
+        <h1 class="section-title w-100 mx-auto">Ediciones <?php echo date('Y') ?></h1>
       </div>
     </div>
     <div class="row align-items-top">
