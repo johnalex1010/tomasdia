@@ -40,8 +40,8 @@
               <a href="" class="smoothscroll" target="_blank">www.usta.edu.co</a>
             </p>
           </div>
-          <div class="col-md-4">
-            <img src="<?php echo URL ?>/public/images/440.png" alt="">
+          <div class="col-md-4 text-right">
+            <img src="<?php echo URL ?>/public/images/440.png" alt="" width="200px;">
           </div>
         </div>
         <div class="row pt-5 mt-5 text-center">
