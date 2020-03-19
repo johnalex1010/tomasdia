@@ -4,7 +4,7 @@
 
 		require_once '../mailer/datos.php';
 		require_once "../mailer/PHPMailerAutoload.php";
-		$prensa = 'prensausta@usantotomas.edu.co';
+		// $prensa = 'prensausta@usantotomas.edu.co';
 
 		$edicion = edicion($conexion, $id_edicion);
 		$consulta = datosUsuario($conexion, $_SESSION['id_usuario']);
@@ -37,7 +37,7 @@
 			<title></title>
 		</head>
 		<body style='margin: 0; font-family: sans-serif;'>
-			<div align='center' style=' margin: 0 auto; width: 950px;'>
+			<div align='center' style=' margin: 0 auto; width: 700px;'>
 				<!-- Cabecera, edición-->
 				<table style='width: 100%;'>
 					<tr>
@@ -46,22 +46,21 @@
 						</td>
 					</tr>
 					<tr>
-						<td style='text-align: right; padding: 32px 0px; font-size: 14px; color: #333231'>Edición n.º ".$edicion['edicion']." - ".fecha($edicion['fecha'])."</td>
+						<td style='text-align: right; padding: 20px 0px 0px 00px; font-size: 14px; color: #333231; margin-right:50px'>Edición n.º ".$edicion['edicion']." - ".fecha($edicion['fecha'])."</td>
 					</tr>			
 				</table>
 				
-				<!-- Contenido: titulo,  parrafo,  img -->
+				<!-- Contenido:img -->
 				<table style='width: 100%;'>
-		<!-- 			<tr>
-						<td colspan='2' style='text-align: center; color: #333231'></td>
-					</tr> -->
 					<tr>
-						<td width='50%;' style='padding: 16px;'>
-							<h2 style='color: #00B6E5; margin-bottom: 16px; font-size: 28px;  text-align: left;'>".$edicion['titulo']."</h2>
-							<p style='margin-top: 16px; color: #333231; font-size: 18px; text-align: justify;'>".$edicion['parrafo']."</p>
-						</td>
-						<td width='50%;'>
+						<td width='100%;'>
 							<img src='https://tomasnoticias.usta.edu.co/dia/public/images/noticias/".$edicion['imagen']."' alt='".$edicion['imagen']."' width='85%;' style='display:block;margin: 16px auto; border-radius: 130px 3px 3px 3px;'>
+						</td>
+					</tr>
+					<tr>
+						<td width='100%;'>
+							<h2 style='color: #00B6E5; margin-bottom: 16px; font-size: 25px;  text-align: center;'>".$edicion['titulo']."</h2>
+							<p style='margin-top: 16px; color: #333231; font-size: 16px; text-align: justify;'>".$edicion['parrafo']."</p>
 						</td>
 					</tr>
 				</table>

@@ -3,7 +3,8 @@
 	$perfil = perfil($conexion, $_SESSION['id_usuario']);
 ?>
 <nav class="site-navigation position-relative text-right" role="navigation">
-  <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-xl-block">
+  <!-- <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-xl-block"> -->
+  <ul class="site-menu main-menu mr-auto d-none d-xl-block js-clone-nav">
     <li><a href="<?php echo URL ?>" class="nav-link">Noticia del día</a></li>
     <li><a href="<?php echo URL ?>#noticias-section" class="nav-link">Últimas Noticias</a></li>
     <li><a href="<?php echo URL ?>/ediciones" class="nav-link" >Ediciones 2020</a></li>

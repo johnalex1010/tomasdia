@@ -24,9 +24,9 @@
           <div class="col-md-4">
             <h3>Siguenos</h3>
             <div class="redes-tomas">
-              <a  class="" href="#"><span class="icon-facebook"></span></a>
-              <a  class="" href="#"><span class="icon-twitter"></span></a>
-              <a  class="" href="#"><span class="icon-instagram"></span></a>
+              <a  class="" href="https://www.facebook.com/UNIVERSIDADSANTOTOMASCOLOMBIA/?ref=br_rs" target="_blank"><span class="icon-facebook"></span></a>
+              <a  class="" href="https://twitter.com/USTA_COLOMBIA" target="_blank"><span class="icon-twitter"></span></a>
+              <a  class="" href="https://www.instagram.com/santotocolombia/" target="_blank"><span class="icon-instagram"></span></a>
             </div>
           </div>
 
