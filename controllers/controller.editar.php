@@ -60,6 +60,15 @@
 	    	$error[4] = "Campo obligatorio";
 	    }
 
+	    //Valoidar Fecha de publicación
+	    $fecha = $_POST['fecha'];
+	    if (isset($fecha)) {
+	    	$fecha = $fecha;
+	    	array_push($noticia, $fecha);
+	    }else{
+	    	$error[5] = "El campo Fecha es obligatorio";
+	    }
+
 
 
 	    //VALIDAR QUE NO HAYA ERRORES

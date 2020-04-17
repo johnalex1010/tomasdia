@@ -18,6 +18,11 @@
               <h3 class="h3 text-primary text-center">Edición nº <?php echo $edicion['edicion'] ?></h3>
             </div>
             <div class="form-group col-md-12">
+              <label for="" class="h4 text-secondary">Fecha</label>
+              <small class="text-danger"><?php echo $error[5]; ?></small>
+              <input type="date" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Títiulo  de la noticia" name="fecha" value="<?php echo $fecha = ($_POST['fecha'] == "") ?  trim($edicion['fecha']) : trim($_POST['fecha']); ?>" autocomplete="off">
+            </div>
+            <div class="form-group col-md-12">
               <label for="" class="h4 text-secondary">Título</label>
               <small class="text-danger"><?php echo $error[1]; ?></small>
               <input type="text" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Títiulo  de la noticia" name="titulo" value="<?php echo $titulo = ($_POST['titulo'] == "") ?  trim($edicion['titulo']) : trim($_POST['titulo']); ?>" autocomplete="off">

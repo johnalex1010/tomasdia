@@ -4,7 +4,7 @@
 
 		require_once '../mailer/datos.php';
 		require_once "../mailer/PHPMailerAutoload.php";
-		$prensa = 'prensausta@usantotomas.edu.co';
+		// $prensa = 'prensausta@usantotomas.edu.co';
 
 		$edicion = edicion($conexion, $id_edicion);
 		$consulta = datosUsuario($conexion, $_SESSION['id_usuario']);

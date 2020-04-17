@@ -38,14 +38,16 @@
 				rename($carpeta.$noticia[5][0],$carpeta.$nuevoNombreImagen);
 			}
 			if (file_exists($carpeta.$nuevoNombreImagen)) {
-				$new_tn = $conexion->prepare("UPDATE t_tn SET titulo=:titulo, parrafo=:parrafo, link=:link, imagen=:imagen WHERE edicion=:edicion");
+				$new_tn = $conexion->prepare("UPDATE t_tn SET fecha=:fecha, titulo=:titulo, parrafo=:parrafo, link=:link, imagen=:imagen WHERE edicion=:edicion");
 	            	$new_tn->execute(
 	            		array(	
 	            			':edicion' => $noticia[0],
+	            			':fecha' => $noticia[6],
 	            			':titulo' => $noticia[2],
 	            			':parrafo' => $noticia[3],
 	            			':link' => $noticia[4],
 	            			':imagen' => $nuevoNombreImagen
+
 	            		)
 	            	);
 	            	unset($_POST);
@@ -56,10 +58,11 @@
 
 	//EDITAR NOTICIA SIN IMAGEN ARRAY
 	function editarNoticia($conexion,$noticia){
-		$new_tn = $conexion->prepare("UPDATE t_tn SET titulo=:titulo, parrafo=:parrafo, link=:link WHERE edicion=:edicion");
+		$new_tn = $conexion->prepare("UPDATE t_tn SET fecha=:fecha, titulo=:titulo, parrafo=:parrafo, link=:link WHERE edicion=:edicion");
 		$new_tn->execute(
 			array(	
 				':edicion' => $noticia[0],
+				':fecha' => $noticia[5],
 				':titulo' => $noticia[2],
 				':parrafo' => $noticia[3],
 				':link' => $noticia[4]
